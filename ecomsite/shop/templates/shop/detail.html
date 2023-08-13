@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body style="background-color: rgba(225, 244, 244, 0.89);">
+    <div class="container " > 
+        <h1 style="color:hsla(190, 92%, 19%, 0.946); margin: 8px 20px; ">Product details</h1>
+        <div class="row" style=" display:flex">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="{{ product_object.image }}"  style="vertical-align: middle; width: 60%; height: 70%; margin: 29px 20px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" style="margin-top: 20px;">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="font-size: calc(1.3rem + -0.4vw) ; color: rgb(5, 91, 122);">Product Name : <span style="color: rgba(6, 133, 142, 0.874)"> {{ product_object.title }} </span></h3>
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="font-size: calc(1.3rem + -0.4vw) ; color: rgb(5, 91, 122);"> Price : <span style="color: rgba(6, 133, 142, 0.874)">{{ product_object.price }}</span></h3>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="font-size: calc(1.3rem + -0.4vw) ; color: rgb(5, 91, 122);">Discount Price : <span style="color: rgba(6, 133, 142, 0.874)">{{ product_object.discount_price }}
+                        </span></h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="font-size: calc(1.3rem + -0.4vw) ; color: rgb(5, 91, 122);">Description : <span style="color: rgba(6, 133, 142, 0.874)">{{ product_object.description }} </span></h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
